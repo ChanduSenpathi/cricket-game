@@ -157,6 +157,7 @@ function playBtn(batsman) {
     }, 2000)
     ballId.style.display = 'none';
     ballId.removeAttribute('ball');
+    batId.setAttribute('disabled', '');
     startTheMatch();
     engage = true;
 }
