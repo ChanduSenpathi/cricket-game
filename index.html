@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <section class="cricket_main_container">
+            <span id="scoreId" class="scoreboard">0</span>
+            <img class="cricket_pitch_img" src="./images/cricket_pitch1.jpg" />
+            <img id="groundId" class="cricket_bg_pitch_img" src="https://as2.ftcdn.net/v2/jpg/07/22/30/81/1000_F_722308178_SjlVF3hF1ddLzmugHvJB2awI5HhvogRa.jpg" alt="cricket ground">
+            <img id="batsmand1Id" class="batsman_1_img" src="./images/batsman1.png" alt="batsman" />
+            <img id="ballId" src="./images/ball.png" alt="ball">
+            <button type="button" id="batId" onclick="playBtn('batsmand1Id')" class="bat_btn">
+                <img class="bat" src="./images/bat.png" alt="bat" />
+            </button>
+            <span id="infoId"></span>
+            <div id="runsId">
+                <span class="main_pitch"></span>
+                <div class="fielders">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="foursId">
+                <span>4</span>
+                <span>4</span>
+                <span>4</span>
+            </div>
+            <div id="sixesId">
+                <span>6</span>
+                <span>6</span>
+                <span>6</span>
+            </div>
+            <div>
+                <audio id="audienceId" src="./audio/infinite.mp3" loop autoplay></audio>
+                <audio id="ballhitId" src="./audio/ball-hit.mp3"></audio>
+                <audio id="boundaryId" src="./audio/large-crowd.mp3"></audio>
+                <audio id="runningId" src="./audio/running.mp3"></audio>
+                <audio id="wicketId" src="./audio//wicket.mp3"></audio>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
